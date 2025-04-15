@@ -4,61 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEAM 1 - Web Development</title>
+    <!-- <style>
+      legend {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    </style> 
+    
+    remove this code if it doesn't apply
+    - vincent
+
+    -->
 </head>
 <body>
-    <header>
-      <h1>Local Tourism Feedback</h1>
-      <button id="lang-toggle">EN</button>
-      <button id="lang-toggle">JPN</button>
-      <button id="lang-toggle">KR</button>
-    </header>
-  
-    <section class="hero">
-      <h2>Help us improve your tourist experience!</h2>
-    </section>
-  
-    <main>
-      <form id="feedback-form">
-        <fieldset>
-          <legend>Visitor Info</legend>
-          <label>Name: <input type="text" id="name"></label>
-          <label>Nationality:
-            <select id="nationality">
-              <option value="local">Local</option>
-              <option value="foreign">Foreign</option>
-            </select>
-          </label>
-          <label>Visit Date: <input type="date" id="visit-date" required></label>
-        </fieldset>
-  
-        <fieldset>
-          <legend>Experience Rating</legend>
-          <label>Cleanliness:
-            <div class="stars" id="cleanliness-rating">
-              <span data-value="1">★</span>
-              <span data-value="2">★</span>
-              <span data-value="3">★</span>
-              <span data-value="4">★</span>
-              <span data-value="5">★</span>
-            </div>
-          </label>
-  
-          <label>Amenities:</label>
-          <label><input type="checkbox" value="Restrooms"> Restrooms</label>
-          <label><input type="checkbox" value="Parking"> Parking</label>
-          <label><input type="checkbox" value="Guides"> Guides</label>
-  
-          <label>Comments:</label>
-          <textarea id="comments" rows="4" cols="50"></textarea>
-        </fieldset>
-  
-        <button type="submit">Submit Feedback</button>
-      </form>
-    </main>
-  
-    <footer>
-      <p>&copy; Local Tourism Feedback - Team 1 - Web Development</p>
-    </footer>
+  <header>
+    <h1>Local Tourism Feedback</h1>
+    <div id="lang-toggle-container">
+      <button id="en-btn">EN</button>
+      <button id="jp-btn">JPN</button>
+      <button id="kr-btn">KR</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Help us improve your tourist experience!</h2>
+  </section>
+
+  <main>
+    <form id="feedback-form">
+      <fieldset>
+        <legend>Visitor Info</legend>
+        <label>Name: <input type="text" id="name" required></label>
+        <label>Nationality:
+          <select id="nationality">
+            <option value="local">Local</option>
+            <option value="foreign">Foreign</option>
+          </select>
+        </label>
+        <label>Visit Date: <input type="date" id="visit-date" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experience Rating</legend>
+        <label>Amenities:</label><br>
+        <label><input type="checkbox" value="Restrooms"> Restrooms</label><br>
+        <label><input type="checkbox" value="Parking"> Parking</label><br>
+        <label><input type="checkbox" value="Guides"> Guides</label><br><br>
+
+        <label>Cleanliness:</label><br>
+        <div class="stars" id="cleanliness-rating">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+
+        <label>Comments:</label><br>
+        <textarea id="comments" rows="4"></textarea>
+      </fieldset>
+
+      <br><button type="submit">Submit Feedback</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Local Tourism Feedback - Team 1 - Web Development</p>
+  </footer>
   
     <script src="script.js"></script>
   </body>
