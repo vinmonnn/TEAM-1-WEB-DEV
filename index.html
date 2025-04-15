@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM 1 - WEBDEV</title>
+</head>
+<body>
+    <header>
+      <h1>Local Tourism Feedback</h1>
+      <button id="lang-toggle">EN</button>
+    </header>
+  
+    <section class="hero">
+      <h2>Help us improve your tourist experience!</h2>
+    </section>
+  
+    <main>
+      <form id="feedback-form">
+        <fieldset>
+          <legend>Visitor Info</legend>
+          <label>Name: <input type="text" id="name" required></label>
+          <label>Nationality:
+            <select id="nationality">
+              <option value="local">Local</option>
+              <option value="foreign">Foreign</option>
+            </select>
+          </label>
+          <label>Visit Date: <input type="date" id="visit-date" required></label>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Experience Rating</legend>
+          <label>Cleanliness:
+            <div class="stars" id="cleanliness-rating">
+              <span data-value="1">★</span>
+              <span data-value="2">★</span>
+              <span data-value="3">★</span>
+              <span data-value="4">★</span>
+              <span data-value="5">★</span>
+            </div>
+          </label>
+  
+          <label>Amenities:</label>
+          <label><input type="checkbox" value="Restrooms"> Restrooms</label>
+          <label><input type="checkbox" value="Parking"> Parking</label>
+          <label><input type="checkbox" value="Guides"> Guides</label>
+  
+          <label>Comments:</label>
+          <textarea id="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+  
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 Local Tourism Board</p>
+    </footer>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
