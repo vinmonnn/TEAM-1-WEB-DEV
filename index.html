@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>TEAM 1 - Web Development</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <h1>Local Tourism Feedback</h1>
-      <button id="lang-toggle">EN</button>
-      <button id="lang-toggle">JPN</button>
-      <button id="lang-toggle">KR</button>
+      <h1>LOCAL TOURISM FEEDBACK</h1>
+      <p>CHOOSE YOUR PREFERRED LANGUAGE</p>
+      <div class="lang-toggle-container" id="lang-toggle-container">
+        <button class="lang-toggle" >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzn-Eg59Qa0vwGWyBrRMsS-DlpFf9P0i6Tg&s"
+            alt="eng"
+          />
+          <p>EN</p>
+        </button>
+        <button class="lang-toggle">
+          <img
+            src="https://vectorflags.s3.amazonaws.com/flags/jp-square-01.png"
+            alt="jpn"
+          />
+          <p>JPN</p>
+        </button>
+        <button class="lang-toggle">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/004/712/812/non_2x/south-korea-square-national-flag-free-vector.jpg"
+            alt="kr"
+          />
+          <p>KR</p>
+        </button>
+      </div>
+      <div class="repeat-strip" title="Love the Philippines"></div>
     </header>
-  
-    <section class="hero">
-      <h2>Help us improve your tourist experience!</h2>
-    </section>
-  
-    <main>
-      <form id="feedback-form">
-        <fieldset>
-          <legend>Visitor Info</legend>
-          <label>Name: <input type="text" id="name"></label>
-          <label>Nationality:
-            <select id="nationality">
-              <option value="local">Local</option>
-              <option value="foreign">Foreign</option>
-            </select>
-          </label>
-          <label>Visit Date: <input type="date" id="visit-date" required></label>
-        </fieldset>
-  
-        <fieldset>
-          <legend>Experience Rating</legend>
-          <label>Cleanliness:
-            <div class="stars" id="cleanliness-rating">
-              <span data-value="1">★</span>
-              <span data-value="2">★</span>
-              <span data-value="3">★</span>
-              <span data-value="4">★</span>
-              <span data-value="5">★</span>
-            </div>
-          </label>
-  
-          <label>Amenities:</label>
-          <label><input type="checkbox" value="Restrooms"> Restrooms</label>
-          <label><input type="checkbox" value="Parking"> Parking</label>
-          <label><input type="checkbox" value="Guides"> Guides</label>
-  
-          <label>Comments:</label>
-          <textarea id="comments" rows="4" cols="50"></textarea>
-        </fieldset>
-  
-        <button type="submit">Submit Feedback</button>
-      </form>
-    </main>
-  
+
+    <div class="content">
+      <section class="hero">
+        <h2>Help us improve your tourist experience!</h2>
+        <hr />
+      </section>
+
+      <main>
+        <form id="feedback-form">
+          <fieldset>
+            <legend>VISITOR INFO</legend>
+            <label
+              >Name:
+              <input
+                type="text"
+                id="name"
+                required
+                placeholder="Enter your name"
+            /></label>
+            <label
+              >Nationality:
+              <select id="nationality">
+                <option value="local">Local</option>
+                <option value="foreign">Foreign</option>
+              </select>
+            </label>
+            <label
+              >Visit Date: <input type="date" id="visit-date" required
+            /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>EXPERIENCE RATING</legend>
+
+            <label>Amenities:</label>
+            <label><input type="checkbox" value="Restrooms" /> Restrooms</label>
+            <label><input type="checkbox" value="Parking" /> Parking</label>
+            <label><input type="checkbox" value="Guides" /> Guides</label>
+
+            <label>Cleanliness:
+              <div class="stars" id="cleanliness-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">★</label>
+              </div>
+            </label>
+
+            <label>Comments:</label>
+            <textarea id="comments" rows="4" cols="50" placeholder="Add your comments or suggestions..."></textarea>
+          </fieldset>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </main>
+    </div>
+
     <footer>
-      <p>&copy; Local Tourism Feedback - Team 1 - Web Development</p>
+      <div class="repeat-strip" title="Love the Philippines"></div>
+      <p><b>Team 1 - Web Development &copy; 2025</b></p>
+      <div class="footer-container">
+        <p>Terms and Conditions</p>
+        <p> | </p>
+        <p>Privacy Policy</p>
+      </div>
     </footer>
-  
+
     <script src="script.js"></script>
   </body>
 </html>
