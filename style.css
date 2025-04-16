@@ -112,7 +112,7 @@ header > .repeat-strip {
   background: linear-gradient(120deg, #06323f, #006d6b, #ebbd7d, #fc9003);
   animation: fadeIn 1s ease-in-out;
   z-index: 1;
-  padding: 5% 5% 2% 5%;
+  padding: 5% 5% 4% 5%;
   font-family: "Lato", sans-serif;
   color: beige;
 }
