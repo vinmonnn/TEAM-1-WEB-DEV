@@ -1,7 +1,7 @@
 const translations = {
     en: {
       // Hero
-      title: "Local Tourism Feedback",
+      title: "LOCAL TOURISM FEEDBACK",
       description: "CHOOSE YOUR PREFERRED LANGUAGE",
       help_us: "Help us improve your tourist experience!",
       // VISITOR INFO
