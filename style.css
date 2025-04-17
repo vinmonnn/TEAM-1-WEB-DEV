@@ -306,6 +306,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
 
   .lang-toggle-container {
     flex-direction: column;
@@ -314,4 +317,30 @@ footer p {
     margin: 20px 0;
   }
 
+  header h1 {
+    font-size: 28px;
+    padding-top: 80px;
+  }
+
+  .content-container {
+    border: 1px solid #06323f;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #06323f;
+    padding: 1rem;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 100%;
+    border: 1px solid #06323f;
+  }
 }
