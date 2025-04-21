@@ -27,7 +27,7 @@ const translations = {
     tac: "Terms and Conditions",
     privacy: "Privacy Policy",
   },
-  jpn: {
+  ja: {
     // Hero
     title: "地域観光に関するフィードバック",
     description: "ご希望の言語を選択してください",
@@ -55,7 +55,7 @@ const translations = {
     tac: "利用規約",
     privacy: "プライバシーポリシー",
   },
-  kr: {
+  ko: {
     // Hero
     title: "지역 관광 피드백",
     description: "선호하는 언어를 선택하세요",
@@ -87,6 +87,8 @@ const translations = {
 
 function setLanguage(lang) {
   const t = translations[lang];
+  // Set the HTML language attribute
+  document.documentElement.lang = lang;
   // Hero
   document.getElementById("title").textContent = t.title;
   document.getElementById("description").textContent = t.description;

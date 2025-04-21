@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @font-face {
   font-family: "Barabara";
-  src: url(/assets/fonts/BARABARA-final.otf) format("opentype");
+  src: url(assets/fonts/BARABARA-final.otf) format("opentype");
 }
 
 * {
@@ -18,7 +18,7 @@ header {
   position: relative;
   height: auto;
   width: 100%;
-  background-image: url(/assets/bg-header.jpg);
+  background-image: url(assets/bg-header.jpg);
   background-size: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   z-index: 2;
@@ -101,7 +101,7 @@ button > p {
 
 header > .repeat-strip {
   height: 20px;
-  background-image: url(/assets/loveph-img.png);
+  background-image: url(assets/loveph-img.png);
   background-repeat: repeat-x;
   background-size: auto 100%;
   cursor: pointer;
@@ -266,7 +266,7 @@ footer {
   position: relative; /* positioning of heaeder background*/
   height: auto;
   width: 100%;
-  background-image: url(/assets/bg-footer.jpeg);
+  background-image: url(assets/bg-footer.jpeg);
   background-size: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   z-index: 2;
@@ -279,7 +279,7 @@ footer > .repeat-strip {
   left: 0;
   right: 0;
   height: 20px;
-  background-image: url(/assets/loveph-img.png);
+  background-image: url(assets/loveph-img.png);
   background-repeat: repeat-x;
   background-size: auto 100%;
   cursor: pointer;
