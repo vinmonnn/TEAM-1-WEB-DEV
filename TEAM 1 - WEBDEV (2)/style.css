@@ -50,14 +50,29 @@ body {
   }
 
   main {
+    position: relative;
     background-color: white;
-    background-image: url(/TEAM\ 1\ -\ WEBDEV\ \(2\)/assets/bg-dot.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px),url(/TEAM\ 1\ -\ WEBDEV\ \(2\)/assets/bg-dot.png);
+    background-size: 100% 2.5em, auto;
     max-width: 700px;
     margin: 2em auto;
-    padding: 4em;
-    border-radius: 5px;
-    box-shadow: 0 4px 13px rgb(49, 29, 0, 1);
+    padding: 4em 3em 4em 4em;
+    border-radius: 10px;
+    box-shadow: 0 4px 13px rgba(49, 29, 0, 1);
+    border-left: 4px solid #feb304;
   }
+  
+  main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: #feb304;
+    opacity: 0.6;
+  }
+  
 
   fieldset {
     border: none;
@@ -99,6 +114,11 @@ body {
   }
   input::placeholder {
     font-style: italic;
+}
+
+hr {
+  border: 1.5px solid #eeaf00;
+  color: #013a24;
 }
 
   .stars {
@@ -196,7 +216,7 @@ body {
   button[type="submit"]:hover {
     background-color: #013a24;
     transform: scale(1.05);
-    color: rgb(255, 249, 240);
+    color: #fec804;
   }
   
   button[type="submit"]:active {
@@ -221,6 +241,7 @@ body {
     border-top: #06323f;
     text-transform: uppercase;
     text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    color: #feb304;
   }
   
   .footer-container {
@@ -232,4 +253,5 @@ body {
     margin: 20px 15px;
     font-weight: 100;
     cursor: pointer;
+    color: rgb(238, 253, 248);
   }
