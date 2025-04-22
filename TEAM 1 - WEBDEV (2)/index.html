@@ -4,52 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School Classroom Feedback Survey</title>
-  <link rel="stylesheet" href="style.css"></link>"
+  <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
-  <header>School Classroom Feedback Survey</header>
+  <header><h1>School Classroom Feedback Survey</h1></header>
   <main>
     <form id="survey-form">
       <fieldset>
-        <legend><strong>Student Info</strong></legend>
+        <legend><strong>Student Info</strong></legend><hr><br>
         <label for="name">Name:</label>
-        <input type="text" id="name">
-
+        <input type="text" id="name" placeholder="Enter your name..."><br>
+        
         <label for="grade">Grade & Section:</label>
-        <select id="grade">
+        <select id="grade" required>
+          <option value="" selected disabled>-- Select --</option>
           <option>Grade 7-A</option>
           <option>Grade 8-B</option>
         </select>
-      </fieldset>
+      </fieldset><br>
 
       <fieldset>
-        <legend><strong>Feedback</strong></legend>
+        <legend><strong>Feedback</strong></legend><hr><br>
         <label for="subject">Subject:</label>
-        <select id="subject">
-          <option>Math</option>
-          <option>Science</option>
-          <option>English</option>
+        <select id="subject" required>
+          <option value="" selected disabled>-- Select --</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="English">English</option>
+        </select>
         </select>
 
         <label>Teacher Rating:</label>
-        <div class="stars" id="teacher-rating">
-          <span data-value="1">★</span>
-          <span data-value="2">★</span>
-          <span data-value="3">★</span>
-          <span data-value="4">★</span>
-          <span data-value="5">★</span>
+        <div class="stars" id="cleanliness-rating">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1">★</label>
+        </div>
         </div>
 
         <label for="lesson">Favorite Lesson:</label>
-        <input type="text" id="lesson">
+        <input type="text" id="lesson" placeholder="Ex: Earth and Space in Science">
 
         <label for="suggestions">Suggestions for Improvement:</label>
-        <textarea id="suggestions" rows="4"></textarea>
+        <textarea id="suggestions" rows="4" placeholder="Your suggestions here..."></textarea>
       </fieldset>
 
-      <label><input type="checkbox" id="anonymous"> Submit Anonymously</label>
-      <br><br>
-      <button type="submit">Submit Feedback</button>
+      <label for="anonymous"><input type="checkbox" id="anonymous"> Submit Anonymously</label>
+      <div class="submit-section">
+        <button type="submit">Submit Feedback</button>
+      </div>
     </form>
 
     <div class="filter-section">
@@ -77,10 +87,12 @@
   </main>
 
   <footer>
-    <p>TEAM 1 - WEB DEVELOPMENT &copy; 2025</p>
-    <p>
-        Terms and Condition | Privacy Policy
-    </p>
+    <p><b>Team 1 - Web Development &copy; 2025</b></p>
+    <div class="footer-container">
+      <p>Terms and Conditions</p>
+      <p> | </p>
+      <p>Privacy Policy</p>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
