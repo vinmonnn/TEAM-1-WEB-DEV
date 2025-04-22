@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('assets/images/notebook-bg.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, footer {
+    background: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  main {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  fieldset {
+    border: none;
+    margin-bottom: 1.5em;
+  }
+
+  label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+  }
+
+  input[type="text"], select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .stars span {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ccc;
+  }
+  .stars span.selected,
+  .stars span:hover,
+  .stars span:hover ~ span {
+    color: gold;
+  }
+
+  .filter-section {
+    margin-top: 2em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+  }
+
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+
+  th, td {
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

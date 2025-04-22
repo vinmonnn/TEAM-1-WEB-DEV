@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Classroom Feedback Survey</title>
+  <link rel="stylesheet" href="style.css"></link>"
+</head>
+<body>
+  <header>School Classroom Feedback Survey</header>
+  <main>
+    <form id="survey-form">
+      <fieldset>
+        <legend><strong>Student Info</strong></legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <label for="grade">Grade & Section:</label>
+        <select id="grade">
+          <option>Grade 7-A</option>
+          <option>Grade 8-B</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Feedback</strong></legend>
+        <label for="subject">Subject:</label>
+        <select id="subject">
+          <option>Math</option>
+          <option>Science</option>
+          <option>English</option>
+        </select>
+
+        <label>Teacher Rating:</label>
+        <div class="stars" id="teacher-rating">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+
+        <label for="lesson">Favorite Lesson:</label>
+        <input type="text" id="lesson">
+
+        <label for="suggestions">Suggestions for Improvement:</label>
+        <textarea id="suggestions" rows="4"></textarea>
+      </fieldset>
+
+      <label><input type="checkbox" id="anonymous"> Submit Anonymously</label>
+      <br><br>
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div class="filter-section">
+      <label for="filter">Filter by Subject:</label>
+      <select id="filter">
+        <option value="All">All</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+      </select>
+
+      <table id="feedback-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Subject</th>
+            <th>Rating</th>
+            <th>Favorite Lesson</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>TEAM 1 - WEB DEVELOPMENT &copy; 2025</p>
+    <p>
+        Terms and Condition | Privacy Policy
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
